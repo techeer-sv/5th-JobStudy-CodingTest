@@ -5,7 +5,7 @@
 - **JavaScript**
 - **Java**
   
-## 🌏 코테 사이트
+## 🍒 코테 사이트
 - https://programmers.co.kr/
 
 ## 🔥 문제 선정 및 스터디 진행 방식
