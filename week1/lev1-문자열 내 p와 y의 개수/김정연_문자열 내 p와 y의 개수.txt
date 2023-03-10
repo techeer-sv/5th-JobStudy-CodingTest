@@ -1,0 +1,23 @@
+function solution(s){
+    let first = 0;
+    let second = 0;
+    
+    for(let i = 0; i<s.length; i++){
+        if(s[i] === 'p' || s[i] === 'P'){
+            first++;
+        }
+    }
+    
+    for(let i = 0; i<s.length; i++){
+        if(s[i] === 'y' || s[i] === 'Y'){
+            second++;
+        }
+    }
+    
+    if(first === second){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
