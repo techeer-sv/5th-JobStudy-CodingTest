@@ -1,0 +1,8 @@
+function solution(s) {
+    return s
+    .toLowerCase()
+    .split(" ")
+    .map((e) => e.charAt(0).toUpperCase() //각 " "로 나눈 배열에 0번째를 대문자로 변환
+         + e.substring(1)) // 1번째 부터 잘라서 문자열 반환
+    .join(" ") //문자열 이어붙이기
+}
