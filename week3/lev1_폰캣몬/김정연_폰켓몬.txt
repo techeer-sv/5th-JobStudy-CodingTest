@@ -1,0 +1,7 @@
+function solution(nums) {
+    let answer = [...new Set(nums)];
+    let collect = nums.length / 2;
+    
+    return answer.length > collect ? collect : answer.length;
+    // 새로운 배열길이가 배열길이/2 했을때 크면 collect 반환 아니면 새로운 배열길이 반환
+}
