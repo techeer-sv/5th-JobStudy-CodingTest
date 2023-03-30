@@ -1,0 +1,18 @@
+function solution(s) {
+    let answer = '';
+    let case_one = s.split(' ');
+    
+    for (let i = 0; i < case_one.length; i++) {
+        for(let j = 0; j < case_one[i].length; j++) {
+            if(j % 2 === 0) {
+                answer += case_one[i][j].toUpperCase();
+            } else {
+                answer += case_one[i][j].toLowerCase();
+            }
+        }
+        if (i < case_one.length -1) {
+            answer += ' ';
+        }
+    }
+    return answer;
+}
