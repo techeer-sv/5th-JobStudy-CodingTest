@@ -1,0 +1,9 @@
+function solution(people, limit) {
+    var answer = 0;
+    people = people.sort((a,b)=>b-a);
+    
+    for(let i = 0, k = people.length-1; i <= k; i++,answer++){
+          if(people[i] + people[k] <= limit) k--;
+    }
+    return answer;
+}
