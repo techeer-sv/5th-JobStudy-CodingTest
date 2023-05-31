@@ -1,0 +1,17 @@
+function solution(book_time) {
+  const map = new Map();
+
+  for (const [startTime, endTime] of book_time) {
+    let start = calcTime(startTime);
+    const end = calcTime(endTime);
+    for (; start < end + 10; start++) map.set(start, (map.get(start) || 0) + 1);
+  }
+
+  return Math.max(...map.values());
+}
+
+// Time 계산 함수
+function calcTime(time) {
+  const [hour, minute] = time.split(':').map(x => +x);
+  return hour * 60 + minute;
+}
