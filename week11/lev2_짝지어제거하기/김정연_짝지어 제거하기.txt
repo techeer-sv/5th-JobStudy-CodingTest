@@ -1,0 +1,13 @@
+function solution(s)
+{
+    const stack = [];
+    
+    for(let value of s){
+        if(stack.length !== 0 && stack[stack.length-1] == value){
+            stack.pop();
+            continue;
+        }
+        stack.push(value);
+    }
+    return stack.length == 0 ? 1 : 0;
+}
